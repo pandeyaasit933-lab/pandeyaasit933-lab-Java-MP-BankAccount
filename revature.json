@@ -1,0 +1,40 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/BankServiceTest.java",
+      "testCases": [
+        {
+          "methodName": "bankServiceTest1",
+          "label": "Checks initial balance is zero",
+          "description": "Verifies that a new BankService starts with a balance of 0."
+        },
+        {
+          "methodName": "bankServiceTest2",
+          "label": "Checks deposits update balance",
+          "description": "Verifies that depositing 500 results in a balance of 500."
+        },
+        {
+          "methodName": "bankServiceTest3",
+          "label": "Checks multiple deposits accumulate",
+          "description": "Verifies that depositing 500 then 200 yields a balance of 700."
+        },
+        {
+          "methodName": "bankServiceTest4",
+          "label": "Checks withdrawal subtracts from balance",
+          "description": "Verifies that depositing 500 then withdrawing 200 results in a balance of 300."
+        },
+        {
+          "methodName": "bankServiceTest5",
+          "label": "Checks existence of overdraft protection",
+          "description": "Verifies that withdrawing beyond the available balance leaves the balance unchanged at 500."
+        },
+        {
+          "methodName": "bankServiceTest6",
+          "label": "Zeroes balance after full withdrawal",
+          "description": "Verifies that depositing 500 then withdrawing 500 results in a balance of 0."
+        }
+      ]
+    }
+  ]
+}
